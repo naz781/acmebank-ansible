@@ -9,8 +9,8 @@
   tasks:
   - name: Print to the screen
     ansible.builtin.debug:
-       msg: "intro to aap"
+      msg: "intro to aap"
 
   - name: Print var from our var file
     ansible.builtin.debug:
-       var: acmebank_var
+      var: acmebank_var
