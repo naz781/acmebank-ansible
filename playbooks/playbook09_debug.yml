@@ -1,10 +1,10 @@
 - name: A simple playbook that prints to the screen
-  hosts: all   # this is typical aap playbook design
-  gather_facts: false   # not using
-  connection: ansible.builtin.local  # debug, sdk (http operations)
+  hosts: all
+  gather_facts: false
+  connection: ansible.builtin.local
 
   vars_files:
-  - vars/playbook09_debug_vars.yml
+  - "{{ playbook_dir }}/vars/playbook09_debug_vars.yml"
 
   tasks:
   - name: Print to the screen
